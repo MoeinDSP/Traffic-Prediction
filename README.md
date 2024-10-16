@@ -1,16 +1,16 @@
 # Traffic-Prediction
 
-Wehavemeasuredthe performance of ANN and LSTM predictorsin termsof MSE, MAE, R2, but…
-What is the impact of thesemetricsfor a network operator?
-How doesan operator act afterpredictingtraffic?
-Do over/under-estimationof trafficprovidethe sameeffect?
+We measured the performance of ANN and LSTM predictors regarding MSE, MAE, and R2, but…
+What is the impact of these metrics on a network operator?
+How does an operator act after predicting traffic?
+Does over/under-estimation of traffic provide the same effect?
 Evaluate the impact of traffic over/under-estimation.
 
-1- Calculate min and max traffic values of the dataframecreated in task 2b) and scaled ground-truth, ANN-predicted and LSTM-predicted traffic traces (test set) so as to have maximum traffic = 1 Gbit/s (so far we have worked with a dataset expressed in CDR units). Then, plot the three traffic traces in a single plot
+1- Calculate min and max traffic values of the data frame created in task 2b) and scaled ground-truth, ANN-predicted, and LSTM-predicted traffic traces (test set) so as to have maximum traffic = 1 Gbit/s (so far we have worked with a dataset expressed in CDR units). Then, plot the three traffic traces in a single plot
 
-2- Define function evaluate_cost()that takes in input ground-truth, ANN-predicted and LSTM-predicted traffic traces (scaled as in task 8a) and two cost parameters alphaand betafor over/under-provisioning and returns cost of over/under-provisioning for the ANN and LSTM cases, assuming a given resource allocation policy
+2- Define function evaluate_cost()that takes in input ground-truth, ANN-predicted, and LSTM-predicted traffic traces (scaled as in task 8a) and two cost parameters alpha and beta for over/under-provisioning and returns cost of over/under-provisioning for the ANN and LSTM cases, assuming a given resource allocation policy
 
-3-Use function evaluate_cost()with given over/under-provisioning cost weights using ground-truth, ANN-predicted and LSTM-predicted traffic traces above; plot results in a 3D graph
+3-Use function evaluate_cost()with given over/under-provisioning cost weights using ground-truth, ANN-predicted, and LSTM-predicted traffic traces above; plot results in a 3D graph
 
 
 
